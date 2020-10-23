@@ -1,17 +1,16 @@
-# PyPadPRO
 <p align="center">
   <br>
-    <img src="/PyPad/PyPad.png" width="150"/>
+    <img src="/PyPad/PyPadPRO.png" width="150"/>
   <br>
 </p>
 
 ![Python 3.x](https://img.shields.io/badge/python-3.x-yellow.svg)
 
-# PyPad
+# PyPad PRO
 A Lightweight Notepad-App made with Python 3.x
 
 > Production Ready. Light-as-a-feather.
-> 13kb (PyPad) vs 177kb (Windows Notepad)
+> 13kb (PyPad PRO) vs 177kb (Windows Notepad)
 
 # WARNING
 This project is still being maintained. Please feel free to submit a pull request or two.
