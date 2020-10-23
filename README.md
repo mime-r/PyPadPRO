@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-    <img src="/example.jpg/" width="150"/>
+    <img src="/PyPadPRO/PyPadPRO.jpg" width="150"/>
   <br>
 </p>
 
@@ -11,6 +11,12 @@ A Lightweight Notepad-App made with Python 3.x
 
 > Production Ready. Light-as-a-feather.
 > 16kb (PyPad PRO) vs 177kb (Windows Notepad)
+
+<p align="center">
+  <br>
+    <img src="/example.jpg/" width="150"/>
+  <br>
+</p>
 
 # WARNING
 This project is still being maintained. Please feel free to submit a pull request or two.
