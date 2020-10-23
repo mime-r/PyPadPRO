@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-    <img src="/PyPad PRO/PyPad.jpg" width="150"/>
+    <img src="https://github.com/mime-r/PyPadPRO/blob/main/PyPad%20PRO/PyPad.png" width="150"/>
   <br>
 </p>
 
