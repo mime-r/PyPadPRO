@@ -17,7 +17,6 @@ This project is still being maintained. Please feel free to submit a pull reques
 
 
 ## Content
-- [WHAT'S NEW?](#whats-new)
 - [Credits](#credits)
 - [Dependencies](#dependencies)
 - [Documentation](#documentation)
