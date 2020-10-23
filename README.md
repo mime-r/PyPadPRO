@@ -37,7 +37,7 @@ I am releasing this for free, so please do support me :D
 Tkinter & Geeksforgeeks
   
 ## Dependencies
--Tkinter
+- Tkinter
 
 ## Documentation
 - Sorry - no documentation yet!
