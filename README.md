@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-    <img src="/PyPadPRO/PyPadPRO.jpg" width="150"/>
+    <img src="/PyPad PRO/PyPad.jpg" width="150"/>
   <br>
 </p>
 
@@ -14,7 +14,7 @@ A Lightweight Notepad-App made with Python 3.x
 
 <p align="center">
   <br>
-    <img src="/example.jpg/" width="150"/>
+    <img src="/example.jpg/"/>
   <br>
 </p>
 
