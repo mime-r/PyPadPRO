@@ -6,6 +6,7 @@ from tkinter.scrolledtext import *
 import time
 import sys
 
+from settings import SettingsManager
 
 class Format():
     def __init__(self, text):
@@ -14,11 +15,13 @@ class Format():
     def changeBg(self):
         (triple, hexstr) = askcolor()
         if hexstr:
+            SettingsManager.change_setting("background_color", hexstr) #update settings
             self.text.config(bg=hexstr)
 
     def changeFg(self):
         (triple, hexstr) = askcolor()
         if hexstr:
+            SettingsManager.change_setting("font_color", hexstr) #update settings
             self.text.config(fg=hexstr)
 
     def bold(self, *args):  # Works only if text is selected
@@ -84,6 +87,7 @@ class Format():
 
 def main(root, text, menubar):
     objFormat = Format(text)
+    SettingsManager.setup(objFormat) # setup the settings
 
     fontoptions = families(root)
     font = Font(family="Arial", size=10)
@@ -121,6 +125,6 @@ def main(root, text, menubar):
     root.config(menu=menubar)
 
 
-if __name__ == "__main":
-    print("Please run 'main.py'")
+if __name__ == "__main__":
+    print("Please run 'PyPad.pyw'")
 
