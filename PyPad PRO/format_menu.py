@@ -87,11 +87,12 @@ class Format():
 
 def main(root, text, menubar):
     objFormat = Format(text)
-    SettingsManager.setup(objFormat) # setup the settings
 
     fontoptions = families(root)
     font = Font(family="Arial", size=10)
     text.configure(font=font)
+
+    SettingsManager.setup(objFormat, font) # setup the settings
 
     formatMenu = Menu(menubar, tearoff=False)
 
@@ -99,9 +100,9 @@ def main(root, text, menubar):
     ssubmenu = Menu(formatMenu, tearoff=False)
 
     for option in fontoptions:
-        fsubmenu.add_command(label=option, command=lambda option=option: font.configure(family=option))
+        fsubmenu.add_command(label=option, command=lambda option=option: SettingsManager.change_font(font, "font_family", option))
     for value in range(1, 31):
-        ssubmenu.add_command(label=str(value), command=lambda value=value: font.configure(size=value))
+        ssubmenu.add_command(label=str(value), command=lambda value=value: SettingsManager.change_font(font, "font_size", value))
 
     formatMenu.add_command(label="Change Background", command=objFormat.changeBg)
     formatMenu.add_command(label="Change Font Color", command=objFormat.changeFg)
