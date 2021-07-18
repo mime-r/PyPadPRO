@@ -36,10 +36,13 @@ class File():
             self.filename = None
         else:
             self.filename = f.name
-            t = f.read()
-            self.text.delete(0.0, END)
-            self.text.insert(0.0, t)
-            self.root.title(os.path.basename(self.filename) + " - PyPad PRO")
+            self.readFile(f)
+
+    def readFile(self, f):
+        t = f.read()
+        self.text.delete(0.0, END)
+        self.text.insert(0.0, t)
+        self.root.title(os.path.basename(self.filename) + " - PyPad PRO")
 
     def quit(self, *args):
         entry = askyesno(title="Quit", message="Are you sure you want to quit?")
@@ -52,9 +55,14 @@ class File():
         self.root = root
 
 
-def main(root, text, menubar):
+def main(root, text, menubar, file_path):
     filemenu = Menu(menubar, tearoff=False)
     objFile = File(text, root)
+    if file_path:
+        objFile.filename = file_path
+        with open(file_path, "r") as f:
+            objFile.readFile(f)
+
     filemenu.add_command(label="New", command=objFile.newFile, accelerator="Ctrl+N")
     filemenu.add_command(label="Open", command=objFile.openFile, accelerator="Ctrl+O")
     filemenu.add_command(label="Save", command=objFile.saveFile, accelerator="Ctrl+S")

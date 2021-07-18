@@ -26,8 +26,9 @@ class PyPadPRO():
 
 
         photo = PhotoImage(file = "PyPad.png")
+        file_path = sys.argv[1] if len(sys.argv) > 1 else None
         root.iconphoto(False, photo)
-        file_menu.main(root, text, menubar)
+        file_menu.main(root, text, menubar, file_path)
         edit_menu.main(root, text, menubar)
         format_menu.main(root, text, menubar)
         help_menu.main(root, text, menubar)
