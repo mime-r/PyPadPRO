@@ -84,4 +84,4 @@ def main(root, text, menubar):
 
 
 if __name__ == "__main__":
-    print("Please run 'PyPad.py'")
+    print("Please run 'PyPad.pyw'")
